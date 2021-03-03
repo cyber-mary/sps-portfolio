@@ -17,8 +17,10 @@ var carousel = new bootstrap.Carousel(myCarousel)
 
 async function getMessage() {
   const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
+  const textFromResponse = await responseFromServer.json();
+
+  const randomElement = textFromResponse[Math.floor(Math.random() * textFromResponse.length)];
 
   const dateContainer = document.getElementById('message-container');
-  dateContainer.innerText = textFromResponse;
+  dateContainer.innerText = randomElement;
 }
