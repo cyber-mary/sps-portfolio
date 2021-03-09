@@ -1,9 +1,72 @@
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+  font-family: Helvetica, sans-serif;
+}
+#top{
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-color: #EEDBDB;
+}
+#abt{
+    text-align: center;
+    padding-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#topbar{
+    background-color: white;
+}
+#selfie{
+    margin-top: 80px;
+    margin-bottom: 25px;
+    border: #EEDBDB;
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+#icons{
+    max-height: 30px;
+    max-width: 30px;
+}
+h1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+h5{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
-#greeting-container {
-  margin-top: 20px;
+#learn{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+.carousel{
+    align-content: center;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+}
+.carousel .carousel-item {
+  height: 500px;
+  width: 500px;
+}
+
+.carousel-item img {
+    height: 500px;
+    width: 500px;
+    align-self: center;
+}
+.carousel .carousel-indicators{
+    padding-top: 5px;
+}
+.carousel-caption {
+   bottom:0;
+   left: 0;
+   right:0;
 }

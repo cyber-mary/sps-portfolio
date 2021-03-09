@@ -12,17 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+async function getMessage() {
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.json();
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const randomElement = textFromResponse[Math.floor(Math.random() * textFromResponse.length)];
+
+  const dateContainer = document.getElementById('message-container');
+  dateContainer.innerText = randomElement;
 }

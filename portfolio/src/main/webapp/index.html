@@ -1,19 +1,124 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+
+    <title>Mary Mendoza's Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
   </head>
+
   <body>
+      
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+        <nav id="topbar" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mary's Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/document/d/1FJefT90dTfaqWoo6iRTJLkQQn5KI2M18ge9eSgRGEB8/edit?usp=sharing">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/hello">Hello World!</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="https://github.com/cyber-mary"><img id="icons" src="images/icons8-github-50.png"> Github</a></li>
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/maryamendoza/"><img id="icons" src="images/icons8-linkedin-50.png">  LinkedIn</a></li>
+                            <li><a class="dropdown-item" href="mailto:maryamendoza00@gmail.com"><img id="icons" src="images/icons8-email-50.png"> Email</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+        <div id = "top" class= "container-fluid">
+        <h1 class="display-1">Welcome to My Portfolio</h1>
+        </div>
+
+        <div id = "abt">
+            <!img src="images/myself.jpg" id = "selfie" class="rounded-circle border border-dark" alt="picture of Mary">
+            <div class="circular--landscape">
+              <img src="images/myself.jpg" id = "me"/>
+            </div>
+            <div>
+                <h3>Hi my name is Mary Mendoza. I am a third year computer science student at California State University Sacramento. I hope you enjoy my portfolio.</h3>
+            </div>
+        </div>
+
+        <hr>
+            <h3 id="learn"> Click through to learn more about me!</h3>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner" id = "inner">
+                <div class="carousel-item active">
+                    <img id="slides" class="d-block mx-auto" src="/images/kayaking.jpeg" alt="Selfie of Mary in a kayak">
+                    <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                        <p>I love the outdoors and recently learned how to kayak!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="slides" class="d-block mx-auto" src="images/EMPODER.jpg" alt="Group photo">
+                    <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                        <p>I learned and taught computer science through a high school program called Empoder.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="slides" class="d-block mx-auto" src="images/SF.jpeg" alt="Mary and their mom in front of the Golden Gate Bridge">
+                    <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                        <p>I am originally from the SF Bay area. Here's a photo of my mom and I at the Golden Gate Bridge</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="slides"class="d-block mx-auto" src="images/mars.jpg" alt="Mary holding and feeding their cat a treat">
+                    <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                        <p>I have a cat, Mars, who is very food motivated</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div> 
+            <br>
+            <p>Click this button to learn my favorite music artists </p>
+            <button onclick="getMessage();">
+             Get artist
+            </button>
+            <br>
+            <p id="message-container"></p>
+            <br>
+        
+ 
     </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
