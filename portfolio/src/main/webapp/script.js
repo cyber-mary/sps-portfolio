@@ -12,9 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var myCarousel = document.querySelector('#myCarousel')
+const myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)
 
+//waits for response from servlet, then takes those messages from servlet and chooses a random one to display
 async function getMessage() {
   const responseFromServer = await fetch('/hello');
   const textFromResponse = await responseFromServer.json();

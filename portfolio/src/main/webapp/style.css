@@ -1,20 +1,24 @@
 #content {
   font-family: Helvetica, sans-serif;
 }
+
 #top{
     padding-top: 250px;
     padding-bottom: 250px;
     background-color: #EEDBDB;
 }
+
 #abt{
     text-align: center;
     padding-bottom: 80px;
     margin-right: auto;
     margin-left: auto;
 }
+
 #topbar{
     background-color: white;
 }
+
 #selfie{
     margin-top: 80px;
     margin-bottom: 25px;
@@ -30,11 +34,13 @@
     max-height: 30px;
     max-width: 30px;
 }
+
 h1 {
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
 }
+
 h5{
     padding-top: 10px;
     padding-bottom: 50px;
@@ -46,12 +52,14 @@ h5{
     padding-top: 50px;
     padding-bottom: 25px;
 }
+
 .carousel{
     align-content: center;
     margin: auto;
     height: 500px;
     width: 500px;
 }
+
 .carousel .carousel-item {
   height: 500px;
   width: 500px;
@@ -62,25 +70,36 @@ h5{
     width: 500px;
     align-self: center;
 }
+
 .carousel .carousel-indicators{
     padding-top: 5px;
 }
+
 .carousel-caption {
    bottom:0;
    left: 0;
    right:0;
 }
+
 #thanks{
     text-align: center;
 }
+
 #thanksheader{
     background-color: #EEDBDB;
 }
+
 #header{
     background-color: #EEDBDB;
 }
+
 #contactform{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+#resume{
+    background-color: #EEDBDB;
+    text-align:center;
 }
