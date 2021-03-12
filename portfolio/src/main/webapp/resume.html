@@ -4,14 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <title>Projects</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
   </head>
-
-    <body>
-
+  <body>
+     
+    <div id="content">
+        <!-- top nav bar -->
         <nav id="topbar" class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Mary's Portfolio</a>
@@ -21,13 +22,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" href="projects.html">Projects</a>
+                        <a class="nav-link active" href="https://docs.google.com/document/d/1FJefT90dTfaqWoo6iRTJLkQQn5KI2M18ge9eSgRGEB8/edit?usp=sharing">Resume</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
+                        <a class="nav-link" href="/hello">Hello World!</a>
                         </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,34 +46,14 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>     
+            </div>         
+        </nav> 
+        
+        <h1 id = "resume">Resume</h1>
+        <a href="src/main/webapp/images/mary-resume">Open Resume</a>
 
-        <h1 class="display-1">Projects & Experience</h1>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title"style="background-color:#EEDBDB">Tic Tac Toe</h5>
-                    <p class="card-text" style="text-align: center;">In my Programming & Methodology II class, I created a tic tac toe game throughout the semester using Java. 
-                        First, I created a tic tac toe game in which two players would type the row & column of the space they would like to take. Then, an updated board would print and the game would continue until there was a winner or tie. 
-                        Then, I created an AI to play against a human player. The human player would type which row and column of the space they would like to take. If the human player only had one more space left to win, then the AI would take that space, or if the AI only had one space left to win, then it would take that space. Otherwise, it would choose any random available space
-                        Lastly, I adjusted the game using Java GUI, so the player could see the tic tac toe board easily </p>
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title" style="background-color:#EEDBDB">Cruelty Free Beauty Website</h5>
-                    <p class="card-text" style="text-align: center;">I created a website, called Cruelty Free Beauty, that had a list of makeup, organized by brand, that were 100% cruelty free. I hoped to one day add a search feature to make the website easier to use</p>
-                </div>
-                </div>
-            </div>
-            
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    </body>
+  </body>
 </html>
